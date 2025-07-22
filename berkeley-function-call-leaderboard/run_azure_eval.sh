@@ -1,0 +1,2 @@
+python -m bfcl_eval generate --model azure-gpt-4.1-nano-FC --run-ids --allow-overwrite
+# python -m bfcl_eval generate --model azure-gpt-4.1-nano-FC --test-category multi_turn_base,multi_turn_miss_func,multi_turn_miss_param,multi_turn_long_context
