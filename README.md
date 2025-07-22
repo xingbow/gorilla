@@ -1,3 +1,40 @@
+## BFCL Modifications
+
+This repository includes custom modifications to the Berkeley Function Calling Leaderboard (BFCL) to support Azure OpenAI models:
+
+### Azure OpenAI Model Support
+
+**Added Models:**
+- `azure-gpt-4.1` - Azure GPT-4.1 (Prompt mode)
+- `azure-gpt-4.1-FC` - Azure GPT-4.1 (Function Calling mode) 
+- `azure-gpt-4.1-mini` - Azure GPT-4.1-mini (Prompt mode)
+- `azure-gpt-4.1-mini-FC` - Azure GPT-4.1-mini (Function Calling mode)
+- `azure-gpt-4.1-nano` - Azure GPT-4.1-nano (Prompt mode)
+- `azure-gpt-4.1-nano-FC` - Azure GPT-4.1-nano (Function Calling mode)
+- `azure-o1-mini` - Azure o1-mini (Prompt mode)
+
+**Files Modified:**
+- `bfcl_eval/constants/supported_models.py` - Added new Azure model names to supported models list
+- `bfcl_eval/constants/model_config.py` - Added ModelConfig entries for all Azure models with pricing and handler configurations
+- `bfcl_eval/model_handler/api_inference/azure_openai.py` - Updated model mapping to support new Azure model names
+
+**Usage:**
+```bash
+# Use local version for development
+python -m bfcl_eval generate --model azure-gpt-4.1-FC --run-ids --allow-overwrite
+
+# For evaluation
+python -m bfcl_eval evaluate --model azure-gpt-4.1-FC --test-category all
+```
+
+**Key Features:**
+- Add Azure Support
+
+For detailed BFCL documentation, see [berkeley-function-call-leaderboard/README.md](berkeley-function-call-leaderboard/README.md).
+
+-----
+
+
 # Gorilla: Large Language Model Connected with Massive APIs
 
 <div align="center">
