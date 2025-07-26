@@ -1,6 +1,19 @@
 ## BFCL Modifications
 
+
 This repository includes custom modifications to the Berkeley Function Calling Leaderboard (BFCL) to support Azure OpenAI models:
+
+
+### Getting Started
+- Install `bfcl` package. Please refer to [BFCL README](berkeley-function-call-leaderboard/README.md)
+   - Create `.env` from `berkeley-function-call-leaderboard/bfcl_eval/.env.example`
+   - Add Azure configuration
+   ```
+    AZURE_OPENAI_API_KEY=
+    AZURE_OPENAI_ENDPOINT=
+    AZURE_OPENAI_API_VERSION=2025-04-01-preview
+  ```
+
 
 ### Azure OpenAI Model Support
 
