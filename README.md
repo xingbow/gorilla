@@ -40,10 +40,18 @@ python -m bfcl_eval generate --model azure-gpt-4.1-FC --run-ids --allow-overwrit
 python -m bfcl_eval evaluate --model azure-gpt-4.1-FC --test-category all
 ```
 
+## Model Stratified Performance Analysis
+```bash
+cd berkeley-function-call-leaderboard  
+python domain_performance_analyzer.py --data-dir bfcl_eval/data --score-dir score --output baseline_results.json
+```
+
 **Key Features:**
 - Add Azure Support
 
 For detailed BFCL documentation, see [berkeley-function-call-leaderboard/README.md](berkeley-function-call-leaderboard/README.md).
+
+- Add model performance analysis
 
 -----
 
