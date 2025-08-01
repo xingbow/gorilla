@@ -53,6 +53,11 @@ python domain_performance_analyzer.py --data-dir bfcl_eval/data --score-dir scor
 python results_to_excel.py -i baseline_results.json -o results.xlsx
 ```
 
+## Model Results Exploration
+- Explore model performance in an interactive UI
+```bash
+streamlit run bfcl_explorer.py
+```
 
 
 **Key Features:**
@@ -61,6 +66,8 @@ python results_to_excel.py -i baseline_results.json -o results.xlsx
 For detailed BFCL documentation, see [berkeley-function-call-leaderboard/README.md](berkeley-function-call-leaderboard/README.md).
 
 - Add model performance analysis
+
+- Add BFCL results explorer
 
 -----
 
